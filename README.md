@@ -27,11 +27,11 @@ Keywords are inputs to the question generator.
 Input Context: __Personal data refers to data, whether true or not, about an individual who can be identified from that data; or from that data and other information to which the organisation has or is likely to have access.__ This includes unique identifiers (e.g. NRIC number, passport number)...
 </br>
 Generated Query: What is personal data?  
-</br>  
+</br>
 Input Context: ...other information to which the organisation has or is likely to have access. __This includes unique identifiers (e.g. NRIC number, passport number); photographs or video images of an individual (e.g. CCTV images); as well as any set of data (e.g. name, age, address, telephone number, occupation, etc), which when taken together would be able to identify the individual.__ For example, Jack Lim, 36 years old, civil servant, lives at Blk 123 Bishan St 23.
 </br>
 Generated Query: What is included in personal data?  
-</br>  
+</br>
 Input Context: ...The data protection provisions govern the collection, use and disclosure of personal data by organisations. __In brief, the PDPA contains three main sets of data protection obligations:__ Obligations relating to notification, consent and purpose. ...
 </br>
 Generated Query: What does the PDPA contain?  
