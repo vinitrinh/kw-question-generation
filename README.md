@@ -1,10 +1,8 @@
 # Keyword Based Question Generator with pre-trained models
 Generates questions from a corpus or knowledge base using keywords.  
 </br>
-Why the hell would anyone need to generate questions?  
-</br>
+__Why the hell would anyone need to generate questions?__  
 Firstly, people do it to train their QA questions. In order to train QA systems, engineers need not just a large corpus but human generated questions matched to their human labelled answer spans. This is extremely tedious. It has been found that generated questions can really improve QA systems. However, I recommend using generated questions from this questions generator to train sentence level QA systems.  
-</br>
 Secondly, some educational systems generate questions to create memory cards. There may be other similar applications.  
 
 
