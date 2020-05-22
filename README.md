@@ -1,10 +1,11 @@
 # KWIG! A Quick Keyword Based Question Generator that is fast and convenient
 
-
+This repo generates questions from a corpus or knowledge base using keywords. Importantly, no training is needed as it used pre-trained models.    
+  
 __Why the hell would anyone need to generate questions?__  
 Seomtimes, people do it to train their QA questions. In order to train QA systems, engineers need not just a large corpus but human generated questions matched to their human labelled answer spans. This is extremely tedious. It has been found that generated questions can really improve QA systems (see UniLM paper below). 
 </br>  
-This repo generates questions from a corpus or knowledge base using keywords. Importantly, no training is needed as it used pre-trained models.  
+
 
 __Do QA systems really benefit from synthetic QA data?__  
 Yes! Finetuning [AI Singapore's Golden Retriever](https://github.com/aimakerspace/goldenretriever) on questions from the PDPA dataset typically worsens OOS performance. This is because the pathetic dataset is at most 200 question answer pairs; it does not matter how you split the data, finetuning on that small a dataset will worsen its generalizability. (You can try it with the link) However, when fintuning on the numerous 3000 synthetic questions, the OOS performance improves. Very nicely below, we enjoy a significant improvement in recall@2 score.   
