@@ -8,7 +8,8 @@ In order to train QA systems, engineers need not just a large corpus but human g
 
 
 __Do QA systems really benefit from synthetic QA data?__  
-Yes! Finetuning [AI Singapore's Golden Retriever](https://github.com/aimakerspace/goldenretriever) on questions from the PDPA QnA dataset typically _worsens OOS performance._ This is because the small dataset is at most 200 question answer pairs; No matter how you split the data, finetuning on that small a dataset will worsen its generalizability. You can try it with the link, the OOS performance will worsen with each epoch.  
+Yes! Finetuning [AI Singapore's Golden Retriever](https://github.com/aimakerspace/goldenretriever) on questions from the PDPA QnA dataset typically _worsens OOS performance._ This is because the small dataset is at most 200 question answer pairs; It doesn't matter how you split the data, finetuning on that small a dataset will worsen its generalizability - the OOS performance will worsen with each epoch.  
+  
 However, when fintuning on the numerous 3000 synthetic questions, the OOS performance improves. Very nicely below, we enjoy a significant improvement in recall@2 score.   
 
 <img src="img/0.1 margin finetune on synthetic.png">
