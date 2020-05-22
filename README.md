@@ -1,6 +1,6 @@
 # KWIG! A Quick Keyword Based Question Generator that is fast and convenient
 
-This repo generates questions from a corpus or knowledge base using keywords. Importantly, no training is needed as it used pre-trained models.    
+This repo generates questions from a corpus or knowledge base using keywords. Importantly, no training is needed as it uses pre-trained models.    
   
 __Why the hell would anyone need to generate questions?__  
 Seomtimes, people do it to train their QA questions. In order to train QA systems, engineers need not just a large corpus but human generated questions matched to their human labelled answer spans. This is extremely tedious. It has been found that generated questions can really improve QA systems (see UniLM paper below). 
