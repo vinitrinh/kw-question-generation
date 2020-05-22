@@ -7,6 +7,11 @@ Secondly, some educational systems generate questions to create memory cards. Th
 </br>  
 This repo generates questions from a corpus or knowledge base using keywords. Importantly, no training is needed as it used pre-trained models.  
 
+__Do QA systems really benefit from synthetic QA data?__  
+Yes! Finetuning [AI Singapore's Golden Retriever](https://github.com/aimakerspace/goldenretriever) on questions from the PDPA dataset typically worsens OOS performance, because the pre-trained weights that the repo depend on are already quite good. However, when fintuning on the numerous synthetic questions, the OOS performance improves. In particular, we enjoy a significant improve in recall@2 score.   
+
+<img src="img/0.1 margin finetune on synthetic.png">
+
 ## Installation  
 Create an environment, perhaps with Conda:  
 `conda create --name qgen`  
