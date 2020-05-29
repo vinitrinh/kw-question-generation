@@ -1,4 +1,4 @@
-# KWIG! A Quick Keyword Based Question Generator that is fast and convenient
+# Keyword Based Question Generator
 
 This repo generates questions from a corpus or knowledge base using keywords. Importantly, no training is needed as it uses pre-trained models.    
   
