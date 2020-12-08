@@ -25,12 +25,13 @@ Series_of_texts = corpus.iloc[:,-1]
 print(Series_of_texts.tail())
 print(f"\nData read\n")
 
+# initiate models
+kwe = kw_extractor()
+qg = q_gen()
 
 """
 1. Extract keywords
 """
-# initiate models
-kwe = kw_extractor()
 
 # for each context, generate a dataframe and save it in generated_questions_list
 list_of_qg_inputs_df = []
@@ -62,7 +63,6 @@ print(f"input dataframe shape: {aggregate_qg_inputs_df.shape}\n")
 """
 2. Generate questions
 """
-qg = q_gen()
 gen_questions_kw_pair = qg.predict(aggregate_qg_inputs_df.context_qg_input)
 
 gen_questions_str = [tup[0] for tup in gen_questions_kw_pair]
